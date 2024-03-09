@@ -1,4 +1,4 @@
-package-installpython3 -m pip install --user dist/*.whlinstall:
+install:
 	 poetry install
 
 brain-games:
