@@ -4,11 +4,17 @@ lint:
 install:
 	poetry install
 
+package-reinstall:
+	python3 -m pip install --user dist/*.whl --force-reinstall
+
 brain-games:
 	poetry run brain-games
 
 brain-even:
         poetry run brain-even
+
+brain-calc:
+	poetry run brain-calc
 
 build:
 	poetry build
