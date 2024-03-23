@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import random
 
 
@@ -6,9 +7,7 @@ def is_even(number):
 
 
 def play_game():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
 
     correct_answers = 0
