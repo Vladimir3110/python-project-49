@@ -9,9 +9,9 @@
  ------------------------------------------------------------------------------------------------------
 |            **Tool**                          |                  **Description**                      |
 |----------------------------------------------|-------------------------------------------------------|
-|[poetry](https://python-poetry.org/)          | "Python dependency management and packaging made easy"|
-|----------------------------------------------|-------------------------------------------------------|
-|[flake8](https://flake8.pycqa.org/en/latest/) | "Your tool for style guide enforcement"               |
+  [poetry](https://python-poetry.org/)         | "Python dependency management and packaging made easy"|
+ ----------------------------------------------|-------------------------------------------------------|
+ [flake8](https://flake8.pycqa.org/en/latest/) | "Your tool for style guide enforcement"               |
  ------------------------------------------------------------------------------------------------------
 
 ### Project: Brain Games
@@ -19,16 +19,7 @@
 
 Brain Games is a set of 5 games for the terminal. In each game, answer 3 questions correctly. If you lose, you can try again.
 
-## This is games use next tools:
 
- ---------------------
-|**Tools**|**Version**|
-|---------|-----------|
-| python  |   3.11    |
-| poetry  |   1.8     |
-| prompt  |   0.4.1   |
-| flake8  |   7.0.0   | 
- ---------------------
 
 [![asciicast](https://asciinema.org/a/3kesNJM44jlddnAG2KW9RYswQ.svg)](https://asciinema.org/a/3kesNJM44jlddnAG2KW9RYswQ)
 
