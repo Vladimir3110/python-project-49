@@ -21,8 +21,8 @@ def play_game():
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{'yes' if is_even(number) else 'no'}'.")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
+                  f"'{'yes' if is_even(number) else 'no'}'.")
             print(f"Let's try again, {name}!")
             return
 
