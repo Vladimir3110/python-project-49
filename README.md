@@ -3,6 +3,11 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9b8c24ec20c341173598/maintainability)](https://codeclimate.com/github/Vladimir3110/python-project-49/maintainability)
 
+## This project was built using these tools:
+ -----------------------------------------------------------------------------------------------------
+|            **Tool**                         |                  **Description**                      |
+|---------------------------------------------|-------------------------------------------------------|
+|[poetry](https://python-poetry.org/)         | "Python dependency management and packaging made easy"|
 
 ### Project: Brain Games
 -------------------------------------------------------------------------------------------------------------------------------
