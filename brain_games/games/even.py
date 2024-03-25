@@ -12,20 +12,21 @@ def play_game():
 
     correct_answers = 0
     while correct_answers < 3:
-        question = random.randint(1, 100)
-        print(f"Question: {question}")
+        number = random.randint(1, 100)
+        print(f"Question: {number}")
         user_answer = input("Your answer: ")
-        if (is_even(question) and user_answer.lower() == "yes") or (
-                not is_even(question) and user_answer.lower() == "no"):
+
+        if (is_even(number) and user_answer == "yes") or (
+                not is_even(number) and user_answer == "no"):
             print("Correct!")
             correct_answers += 1
         else:
-
-            print(f"'{user_answer}' is wrong answer was ;(.'"
-                  f"{'yes' if is_even(question) else 'no'}'.")
-            print(f"Let`s try agian, {name}!")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f"Correct answer was '{'yes' if is_even(number) else 'no'}'.")
+            print(f"Let's try again, {name}!")
             return
-        print(f"Congratulations, {name}!")
+
+    print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
