@@ -10,9 +10,8 @@
 |            **Tool**                         |                  **Description**                      |
 |---------------------------------------------|-------------------------------------------------------|
 |[poetry](https://python-poetry.org/)         | "Python dependency management and packaging made easy"|
-|                                             |                                                       |
 |[flake8](https://flake8.pycqa.org/en/latest/)| "Your tool for style guide enforcement"               |
- ---------------------------------------------|-------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------
 
 
 ### Project: Brain Games
