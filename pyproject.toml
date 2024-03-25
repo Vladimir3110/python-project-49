@@ -2,7 +2,8 @@
 name = "hexlet-code"
 version = "0.3.0"
 description = "Brain Games is a set of 5 games for the terminal."
-authors = ["Vladimir3110"]
+authors = ["Vladimir <aniceev30@yandex.ru>"]
+repository = https://github.com/Vladimir3110/python-project-49.git
 readme = "README.md"
 packages = [{include = "brain_games"},]
 
