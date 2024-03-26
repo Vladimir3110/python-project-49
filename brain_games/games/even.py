@@ -6,28 +6,32 @@ def is_even(number):
     return number % 2 == 0
 
 
+def generate_question():
+    number = random.randint(1, 100)
+    return str(number)
+
+
+def get_correct_answer(number):
+    if is_even(int(number)):
+        return 'yes'
+    return 'no'
+
+
 def play_game():
     name = welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
 
-    correct_answers = 0
-    while correct_answers < 3:
-        number = random.randint(1, 100)
-        print(f"Question: {number}")
+    for _ in range(3):
+        question = generate_question()
+        print("Question: " + question)
         user_answer = input("Your answer: ")
+        correct_answer = get_correct_answer(question)
 
-        if (is_even(number) and user_answer == "yes") or (
-                not is_even(number) and user_answer == "no"):
+        if user_answer.lower() == correct_answer:
             print("Correct!")
-            correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
-                  f"'{'yes' if is_even(number) else 'no'}'.")
-            print(f"Let's try again, {name}!")
+            print("'" + user_answer + "' is wrong answer ;(. Correct answer was"
+                                      " '" + correct_answer + "'.")
+            print("Let's try again, " + name + "!")
             return
 
-    print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    play_game()
+    print("Congratulations, " + name + "!")
