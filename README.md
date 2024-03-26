@@ -19,20 +19,9 @@ If you lose, you can try again.
 | Tools  | Version |
 |:------:|:-------:|
 | python |  3.11   |
-| poetry |  1.6.1  |
+| poetry |  1.8.0  |
 | prompt |  0.4.1  |
-| flake8 |  6.1.0  |
-
-
-### To get started, you need to perform the following operations:
-
-| Step |                                     Instruction                                     |
-|:----:|:-----------------------------------------------------------------------------------:|
-|  1   | Clone he repository to your PC:<br/>`git@github.com:deaniway/python-project-49.git` |
-|  2   |                     Go to repository<br/>`cd python-project-49`                     |
-|  3   |                   Installation game in your PC<br/>`make install`                   | 
-
-*P.S.* *You must have [Poetry](https://python-poetry.org) installed*
+| flake8 |  7.0.0  | 
 
 ### For developers
 
