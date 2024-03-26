@@ -1,4 +1,5 @@
 from brain_games.cli import welcome_user
+from brain_games.constant import GAME_INSTRUCTIONS
 import random
 
 
@@ -19,6 +20,7 @@ def get_correct_answer(number):
 
 def play_game():
     name = welcome_user()
+    print(GAME_INSTRUCTIONS["even"])
 
     for _ in range(3):
         question = generate_question()
