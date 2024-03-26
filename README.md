@@ -19,9 +19,9 @@ If you lose, you can try again.
 | Tools  | Version |
 |:------:|:-------:|
 | python |  3.11   |
-| poetry |  1.6.1  |
+| poetry |  1.8.0  |
 | prompt |  0.4.1  |
-| flake8 |  6.1.0  | 
+| flake8 |  7.0.0  | 
 
 ### For developers
 
