@@ -29,7 +29,8 @@ def calc_game():
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
-            return
+            retur
+            break
 
     print(f"Congratulations, {name}!")
     return
