@@ -23,8 +23,6 @@ If you lose, you can try again.
 | prompt |  0.4.1  |
 | flake8 |  6.1.0  | 
 
-*P.S.* *You must have [Poetry](https://python-poetry.org) installed*
-
 ### For developers
 
 |  №   |         Command          | 
