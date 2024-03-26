@@ -3,7 +3,7 @@
 
 This project was built using these tools:
 
-| Tool                                                                        | Description                                            |
+| **Tool**                                                                    | **Description**                                            |
 |-----------------------------------------------------------------------------|--------------------------------------------------------|
 | [poetry](https://python-poetry.org/)                                        | "Python dependency management and packaging made easy" |
 | [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement"                |       
