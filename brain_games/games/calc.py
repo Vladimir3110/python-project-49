@@ -7,24 +7,21 @@ def calc_game():
     name = welcome_user()
     print("What is the result of the expression?")
 
-    count = 0
-    while count < 3:
-        num1 = random.randint(1, 10)
-        num2 = random.randint(1, 10)
-        operator = random.choice(["+", "-", "*"])
-        expression = f"{num1} {operator} {num2}"
-        correct_answer = eval(expression)
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    operator = random.choice(["+", "-", "*"])
+    expression = f"{num1} {operator} {num2}"
+    correct_answer = eval(expression)
 
-        print(f"Question: {expression}")
-        user_answer = int(input("Your answer: "))
+    print(f"Question: {expression}")
+    user_answer = int(input("Your answer: "))
 
-        if user_answer == correct_answer:
-            print("Correct!\n")
-        else:
-            print(f"'{user_answer}' is the wrong answer ;(. Correct answer was "
-                  f"'{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            count += 1
+    if user_answer == correct_answer:
+        print("Correct!\n")
+    else:
+        print(f"'{user_answer}' is the wrong answer ;(. Correct answer was "
+              f"'{correct_answer}'.")
+        print(f"Let's try again, {name}!")
 
     print(f"Congratulations, {name}!")
 
