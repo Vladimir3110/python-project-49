@@ -24,9 +24,8 @@ def calc_game():
             print(f"{user_answer} - wrong answer ;(. The correct answer was "
                   f" {correct_answer}.\nLet's try again, {name}!\n")
             return
-
+            
         count += 1
-        break
 
     print(f"Congratulations, {name}!")
 
