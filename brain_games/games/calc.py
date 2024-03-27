@@ -27,7 +27,7 @@ def calc_game():
             print(f"Let's try again, {name}!")
         break
         
-        print(f"Congratulations, {name}!")
+    print(f"Congratulations, {name}!")
 
 
 calc_game()
