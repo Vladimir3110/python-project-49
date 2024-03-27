@@ -12,7 +12,7 @@ def calc_game():
     print("What is the result of the expression?")
 
     correct_answers = 0
-    for _ in range(3):
+    for _ in range(1):
         num1 = random.randint(1, 50)
         num2 = random.randint(1, 50)
         operator = random.choice(["+", "-", "*"])
