@@ -21,7 +21,7 @@ def calc_game():
         if user_answer == correct_answer:
             print("Correct!\n")
         else:
-            print(f"'{user_answer}' is the wrong answer ;(. Correct answer was
+            print(f"'{user_answer}' is the wrong answer ;(. Correct answer was "
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
             count += 1
