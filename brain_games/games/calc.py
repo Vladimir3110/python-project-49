@@ -5,6 +5,7 @@ import random
 def calc_game():
     print("brain-calc\n")
     name = welcome_user()
+    print("What is the result of the expression?")
 
     count = 0
     while count < 3:
