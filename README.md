@@ -5,7 +5,7 @@
 
 [![asciicast](https://asciinema.org/a/3kesNJM44jlddnAG2KW9RYswQ.svg)](https://asciinema.org/a/3kesNJM44jlddnAG2KW9RYswQ)
 
-[![asciicast](https://asciinema.org/a/648175.svg)](https://asciinema.org/a/648175)
+[![asciicast](https://asciinema.org/a/649342.svg)](https://asciinema.org/a/649342)
 
 [![asciicast](https://asciinema.org/a/648494.svg)](https://asciinema.org/a/648494)
 
