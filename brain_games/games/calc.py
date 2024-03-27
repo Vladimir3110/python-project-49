@@ -2,12 +2,17 @@ from brain_games.cli import welcome_user
 import random
 
 
+def calculate(expression):
+    return eval(expression)
+
+
 def calc_game():
     print("brain-calc\n")
     name = welcome_user()
+    print("What is the result of the expression?")
 
-    count = 0
-    while count < 3:
+    correct_answers_count = 0
+    while correct_answers_count < 3:
         num1 = random.randint(1, 10)
         num2 = random.randint(1, 10)
         operator = random.choice(["+", "-", "*"])
@@ -19,14 +24,13 @@ def calc_game():
 
         if user_answer == correct_answer:
             print("Correct!\n")
+            correct_answers_count += 1
+            if correct_answers_count == 3:
+                print(f"Congratulations, {name}!")
+                if correct_answers_count != 3:
+                    break
         else:
-            print(f"{user_answer} - wrong answer ;(. The correct answer was "
-                  f" {correct_answer}.\nLet's try again, {name}!\n")
-            return
-
-        count += 1
-
-    print(f"Congratulations, {name}!")
-
-
-calc_game()
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
+                  f"'{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            break
