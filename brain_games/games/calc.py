@@ -25,12 +25,24 @@ def calc_game():
         if user_answer == correct_answer:
             print("Correct!\n")
             correct_answers_count += 1
+<<<<<<< HEAD
             if correct_answers_count == 3:
                 print(f"Congratulations, {name}!")
                 if correct_answers_count != 3:
                     break
+=======
+>>>>>>> origin/main
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
+<<<<<<< HEAD
             break
+=======
+        break
+        
+    print(f"Congratulations, {name}!")
+
+
+calc_game()
+>>>>>>> origin/main
