@@ -26,6 +26,7 @@ def calc_game():
             return
 
         count += 1
+        break
 
     print(f"Congratulations, {name}!")
 
