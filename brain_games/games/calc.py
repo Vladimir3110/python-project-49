@@ -35,6 +35,3 @@ def calc_game():
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
-
-
-calc_game()
