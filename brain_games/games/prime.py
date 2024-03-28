@@ -34,7 +34,3 @@ def play_prime():
             return
 
     print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    play_prime()
