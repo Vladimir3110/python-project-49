@@ -1,51 +1,24 @@
-from brain_games.cli import welcome_user
-import random
+from brain_games.utils import generate_rand_num
+from brain_games.constants import GAME_INSTRUCTIONS, PROGRESSION_LENGTH
+from brain_games.the_engine import run_game
 
 
 def generate_progression(start, step, length):
-    progression = []
-    for _ in range(length):
-        progression.append(start)
-        start += step
-    return progression
+    return list(range(start, start + step * length, step))
 
 
-def hide_element(progression, index):
-    hidden_progression = progression.copy()
-    hidden_progression[index] = '..'
-    return hidden_progression
+def generate_progression_hidden_num():
+
+    start_num, step = generate_rand_num(), generate_rand_num()
+    progression = generate_progression(start_num, step, PROGRESSION_LENGTH)
+
+    index_to_replace = generate_rand_num(0, PROGRESSION_LENGTH - 1)
+    hidden_num = progression[index_to_replace]
+    progression[index_to_replace] = '..'
+
+    missed = " ".join(map(str, progression))
+    return missed, str(hidden_num)
 
 
 def play_progression_game():
-    print("brain-progression\n")
-    name = welcome_user()
-    print("What number is missing in the progression?")
-    num_correct_answers = 0
-    while num_correct_answers < 3:
-        start = random.randint(1, 10)
-        step = random.randint(1, 10)
-        length = random.randint(5, 10)
-        progression = generate_progression(start, step, length)
-        hidden_index = random.randint(0, length - 1)
-        hidden_progression = hide_element(progression, hidden_index)
-
-        question = ' '.join(str(num) for num in hidden_progression)
-        correct_answer = str(progression[hidden_index])
-
-        print(f"Question: {question}")
-        user_answer = input("Your answer: ")
-
-        if user_answer == correct_answer:
-            print("Correct!")
-            num_correct_answers += 1
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return
-
-    print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    play_progression_game()
+    run_game(generate_progression_hidden_num, GAME_INSTRUCTIONS["progression"])
