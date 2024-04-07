@@ -1,35 +1,23 @@
-from brain_games.cli import welcome_user
+from brain_games.utils import generate_rand_num
+from brain_games.the_engine import run_game
 from brain_games.constants import GAME_INSTRUCTIONS
-import random
-import prompt
 
 
-def is_prime(number):
-    if number < 2:
+def is_prime(num):
+    if num <= 1:
         return False
-    for i in range(2, number):
-        if number % i == 0:
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
             return False
     return True
 
 
+def get_number_and_prime_answer():
+
+    num = generate_rand_num()
+    answer = 'yes' if is_prime(num) else 'no'
+    return num, answer
+
+
 def play_prime():
-    print("brain-prime\n")
-    name = welcome_user()
-    print(GAME_INSTRUCTIONS["prime"])
-
-    for _ in range(3):
-        number = random.randint(1, 100)
-        print(f"Question: {number}")
-        user_answer = prompt.string("Your answer: ")
-        correct_answer = "yes" if is_prime(number) else "no"
-
-        if user_answer == correct_answer:
-            print("Correct!")
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
-                  f"'{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return
-
-    print(f"Congratulations, {name}!")
+    run_game(get_number_and_prime_answer, GAME_INSTRUCTIONS["prime"])
